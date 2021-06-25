@@ -1,0 +1,142 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: mucormycosis_intro
+  examples: |
+    - What is mucormycosis ?
+    - What is black fungus ?
+    - Tell me about black fungus
+    - Can you talk about black fungus
+    - Black fungus infection
+    - What is black fungus covid ?
+    - Does mucormycosis occur post COVID-19 ?
+    - Black fungus
+    - mucormycosis
+    - black fungus
+- intent: mucormycosis_spread
+  examples: |
+    - How does mucormycosis spread ?
+    - How does black fungus spread through ?
+    - Tell me about black fungus spread
+    - Black fungus spread
+    - Black fungus transmission
+    - mucormycosis spread
+    - Black fungus spreadable
+    - Where does black fungus spread in the body ?
+    - black fungus spread from one person to another
+- intent: mucormycosis_causes
+  examples: |
+    - What causes mucormycosis ?
+    - Causes of black fungus due to
+    - black fungus causes in covid
+    - Causes of black fungus due to COVID-19
+    - black fungus causes
+    - mucormycosis causes
+- intent: mucormycosis_symptoms
+  examples: |
+    - Symptoms of mucormycosis post covid
+    - Black fungus symptoms covid
+    - Black fungus sympt
+    - Black fungal symptoms
+    - How much the symptoms last
+- intent: mucormycosis_treatment
+  examples: |
+    - Black fungus treatmnet
+    - Black fungus treatment medicine
+    - black fungus treatment at home
+    - Black fungus treatment cost
+    - mucormycosis treatment
+- intent: high_risk
+  examples: |
+    - Black fungus high risk
+    - Who is at a higher risk of infection
+- intent: mucormycosis_food_spread
+  examples: |
+    - Does black fungus spread through food ?
+    - Does eating food result in black fungus ?
+- intent: cold_weather
+  examples: |
+    - will cold weather stop the spread 
+    - will it stop with cold weather

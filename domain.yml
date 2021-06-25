@@ -1,0 +1,87 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- mood_great:
+    use_entities: true
+- mood_unhappy:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- mucormycosis_intro:
+    use_entities: true
+- mucormycosis_spread:
+    use_entities: true
+- mucormycosis_causes:
+    use_entities: true
+- mucormycosis_symptoms:
+    use_entities: true
+- mucormycosis_treatment:
+    use_entities: true
+- food_spread:
+    use_entities: true
+- high_risk:
+    use_entities: true
+- cold_weather:
+    use_entities: true
+- mucormycosis_food_spread:
+    use_entities: true
+entities: []
+slots: {}
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_mucormycosis_intro:
+  - text: Mucormycosis (sometimes called zygomycosis) is a serious but rare fungal infection caused by a group of molds called mucormycetes. These fungi live throughout the environment, particularly in soil and in decaying organic matter, such as leaves, compost piles, or rotten wood. People get mucormycosis by coming in contact with the fungal spores in the environment. For example, the lung or sinus forms of the infection can occur after someone breathes in spores. These forms of mucormycosis usually occur in people who have health problems or take medicines that lower the body’s ability to fight germs and sickness. Mucormycosis can also develop on the skin after the fungus enters the skin through a cut, scrape, burn, or other type of skin trauma. Therefore, it is crucial to understand the causative factors and prominent symptoms associated with Mucormycosis, to quickly identify any possible warning signs arising in COVID-19 patients. These must be promptly conveyed to the healthcare professional so that timely medical treatment can be provided and the affected individual recovers completely.
+  utter_mucormycosis_spread:
+  - text: Disseminated mucormycosis, which occurs when the infection spreads through the bloodstream, can occur in people who are already sick from other medical conditions;that makes it hard to determine which symptoms are due to the infection and which are related to their existing condition. Disseminated mucormycosis in the brain can affect mental status or induce coma.The disease is not contagious, which means that it cannot spread from contact between humans or animals. But it does spread from fungal spores that are present in the air or in the environment, which are almost impossible to avoid.
+  utter_mucormycosis_causes:
+  - text: Mucormycetes, the group of fungi that cause mucormycosis, are present throughout the environment, particularly in soil and in association with decaying organic matter,such as leaves,compost piles and animal dung.They are more common in soil than in air, and in summer and fall than in winter or spring. 2-4 Most people come in contact with microscopic fungal spores every day, so it’s probably impossible to completely avoid coming in contact with mucormycetes. These fungi aren’t harmful to most people. However, for people who have weakened immune systems, breathing in mucormycete spores can cause an infection in the lungs or sinuses which can spread to other part.
+  utter_mucormycosis_symptoms:
+  - text: The symptoms of black fungus will vary depending on where the fungus is growing in your body. They may include the following.Fever,Cough,Chest pain,Shortness of breath,Swelling on one side of your face,Headache,Sinus congestion,Black lesions on the top of the nose or the inside of the mouth,Belly pain,Nausea and vomiting,Gastrointestinal bleeding,Blood in your stool,Diarrhea,If your skin is infected, the affected area may appear blistered, red, or swollen. It may turn black, feel warm, or be painful.
+  utter_mucormycosis_treatment:
+  - text: The following must be taken while treating mucormycosis.Mucormycosis treatment must be fast and aggressive. The concern is due to the fact that by the time even a presumptive diagnosis is made,the patient has often suffered significant tissue damage which cannot be reversed.Most patients will need surgical and medical treatment.Most infectious disease experts say that without aggressive surgical debridement of the infected area, the patient is likely to die.antifungal drugs to slow or stop the fungal spread and drugs to treat debilitating underlying diseases.Amphotericin B (initially intravenous) is the usual drug of choice for antifungal therapy.Posaconazole or isavuconazole can treat mucormycosis.Patients may even require an intravenous antifungal procedure lasting 4 -6 weeks.Patients with underlying diseases like diabetes need to be in optimal control of their diabetes. Patients normally on steroids or taking deferoxamine (Desferal; used to remove excess iron from the body) are likely to have these drugs stopped because they can increase the,survival of fungi in the body.Patients may need additional surgeries and usually need antifungal treatment for an extended period (weeks to months) depending on the severity of the disease.
+  utter_high_risk:
+  - text: According to India's All India Institute of Medical Sciences guidelines, the following category of people are under higher risk for developing black fungus.Patients with uncontrolled diabetes, diabetic ketoacidosis, and diabetics on steroids or tocilizumab ,those on immunosuppressants or anticancer treatment, and patients with chronic debilitating illness,Patients on high dose steroids and or long duration of steroids or tocilizumab,Severe COVID-19 cases,Patients on oxygen support – and needed nasal prongs, by mask, or on ventilator
+  utter_food_spread:
+  - text: No, Black Fungus or Mucormycosis doesnot spread through food.
+  utter_cold_weather:
+  - text: No cold weather will not stop the spread of black fungus.There is no studies to support the claim Neither black fungus will stop due to cold weather.
+actions:
+- utter_greet
+- utter_cheer_up
+- utter_did_that_help
+- utter_happy
+- utter_goodbye
+- utter_iamabot
+- utter_mucormycosis_intro
+- utter_mucormycosis_spread
+- utter_mucormycosis_causes
+- utter_mucormycosis_symptoms
+- utter_mucormycosis_treatment
+- utter_food_spread
+- utter_high_risk
+forms: {}
+e2e_actions: []

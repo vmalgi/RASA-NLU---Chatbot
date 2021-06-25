@@ -1,0 +1,70 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: Introduction to mucormycosis
+  steps:
+  - intent: mucormycosis_intro
+  - action: utter_mucormycosis_intro
+
+- story: Spread of mucormycosis
+  steps:
+  - intent: mucormycosis_spread
+  - action: utter_mucormycosis_spread
+
+- story: Causes of mucormycosis
+  steps:
+  - intent: mucormycosis_causes
+  - action: utter_mucormycosis_causes
+
+- story: Symptoms of mucormycosis
+  steps:
+  - intent: mucormycosis_symptoms
+  - action: utter_mucormycosis_symptoms
+
+- story: Treatment of mucormycosis
+  steps:
+  - intent: mucormycosis_treatment
+  - action: utter_mucormycosis_treatment
+
+- story: mucormycosis high risk
+  steps:
+  - intent: high_risk
+  - action: utter_high_risk
+
+- story: mucormycosis food spread
+  steps:
+  - intent: food_spread
+  - action: utter_food_spread
+
+- story: mucormycosis cold weather
+  steps:
+  - intent: cold_weather
+  - action: utter_cold_weather
