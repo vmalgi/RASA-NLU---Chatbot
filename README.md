@@ -31,9 +31,10 @@ Telegram integration screenshot
 ![ss](https://user-images.githubusercontent.com/45694329/123466238-bfc14c80-d60c-11eb-9a29-454cee618b9c.jpg)
 
 Steps to integrate the chatbot into slack.[1]
+
 1.First create the app in slack and integrate the chatbot into the app (app.slack.com/apps)
 2.Add the Slack token key, app ID and secret key in the domain.yml file
-2.After creating the app in slack, run the command rasa run.
+3.After creating the app in slack, run the command rasa run.
 3.Open the slack app, converse with the bot in the apps section of the slack.
 
 Slack integration screenshot
