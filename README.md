@@ -57,19 +57,17 @@ Google Cloud Platform Screenshot
 System Requirements :
 
 OS : Ubuntu 20.0.04 LTS
-
 CPU : Intel Core i3 and above.
-
 RAM : 4 GB
-
 Memory : 256 GB SSD.
 
 
 References :
 
 [1] https://www.youtube.com/watch?v=2Qu4LCvB4bs
-
 [2] https://www.youtube.com/watch?v=iwciZDZ0OWM
+
+
 
 
 
