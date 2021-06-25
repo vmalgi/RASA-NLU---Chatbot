@@ -16,8 +16,6 @@ Screenshots:
 
 ![Screenshot from 2021-06-25 11-00-32](https://user-images.githubusercontent.com/45694329/123464806-ef6f5500-d60a-11eb-84f7-5e82dcb255d3.png)
 ![Screenshot from 2021-06-25 11-01-48](https://user-images.githubusercontent.com/45694329/123464823-f4cc9f80-d60a-11eb-9dd9-e1fb8a055dc1.png)
-![Screenshot from 2021-06-25 11-02-35](https://user-images.githubusercontent.com/45694329/123464973-280f2e80-d60b-11eb-8642-8271b435cf62.png)
-![Screenshot from 2021-06-25 11-03-29](https://user-images.githubusercontent.com/45694329/123464978-29d8f200-d60b-11eb-915a-9d302d0dc52c.png)
 ![Screenshot from 2021-06-25 11-06-47](https://user-images.githubusercontent.com/45694329/123465025-3b21fe80-d60b-11eb-9530-58cb72ff3ff9.png)
 
 Steps to integrate the chatbot with Telegram and Slack.
@@ -28,13 +26,41 @@ Steps to integrate the chatbot with Telegram and Slack.
 4. Run rasa using command rasa run.Additionally, at same time run rasa run actions to start the action server.
 5. Go to telegram channel where bot is created and converse with bot.
 
+Telegram integration screenshot
+![Screenshot](https://user-images.githubusercontent.com/45694329/123465886-52152080-d60c-11eb-903c-eab4a770f22a.jpg)
+![ss](https://user-images.githubusercontent.com/45694329/123466238-bfc14c80-d60c-11eb-9a29-454cee618b9c.jpg)
+
+Steps to integrate the chatbot into slack.[1]
+1.First create the app in slack and integrate the chatbot into the app (app.slack.com/apps)
+2.Add the Slack token key, app ID and secret key in the domain.yml file
+2.After creating the app in slack, run the command rasa run.
+3.Open the slack app, converse with the bot in the apps section of the slack.
+
+Slack integration screenshot
+![Screenshot from 2021-06-25 17-57-42](https://user-images.githubusercontent.com/45694329/123466690-41b17580-d60d-11eb-840a-9a761626d9c1.png)
+![Screenshot from 2021-06-25 18-04-22](https://user-images.githubusercontent.com/45694329/123466705-4544fc80-d60d-11eb-897a-d5ee8f81881b.png)
+
+Steps to deploy the model into Google cloud platform [2]
+
+1.Create a new VM instance in the GCP.Minimum configuration include 4 GB RAM, Ubuntu 20.04 LTS, 50 GB HDD in GCP.
+2.Install the Rasa X in the created VM instance.Set the password for RASA login.
+3.Once installed link the RASA in GCP with the GIT hub repository
+4.Train the model and then converse with chatbot.
+
+Google Cloud Platform Screenshot
+
+![Screenshot from 2021-06-25 20-50-15](https://user-images.githubusercontent.com/45694329/123467399-18ddb000-d60e-11eb-9659-5b9477fe76d4.png)
+![Screenshot from 2021-06-25 20-20-28](https://user-images.githubusercontent.com/45694329/123467378-1418fc00-d60e-11eb-80e3-fb467ba33022.png)
+![Screenshot from 2021-06-25 20-21-06](https://user-images.githubusercontent.com/45694329/123467392-167b5600-d60e-11eb-8007-19453449441c.png)
+
+System Requirements :
+
+OS : Ubuntu 20.0.04 LTS
+CPU : Intel Core i3 and above.
+RAM : 4 GB
+Memory : 256 GB SSD.
 
 
-
-
-
-
-Steps to integrate the chatbot with slack
-
-
-
+References :
+[1] https://www.youtube.com/watch?v=2Qu4LCvB4bs
+[2] https://www.youtube.com/watch?v=iwciZDZ0OWM
